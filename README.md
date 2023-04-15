@@ -1,2 +1,2 @@
 # acc-documentation
-Endpoint documentation
+Endpoint documentation.
