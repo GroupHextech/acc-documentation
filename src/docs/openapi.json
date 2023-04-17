@@ -20,10 +20,26 @@
     {
       "name": "Chassis",
       "tags": [
-        "Chassis_1 - Lista de chassis"
+        "Chassis - Lista de chassis"
+        
+      ]
+    },
+    {
+      "name": "Item",
+      "tags": [
+        "Itens - Lista de Itens"
+        
+      ]
+    },
+    {
+      "name": "User",
+      "tags": [
+        "User - Lista de Usuario"
         
       ]
     }
+
+    
   ],
   "servers": [
     {
@@ -39,6 +55,12 @@
     },
     "/chassi/list": {
       "$ref": "./chassi/listChassis/listChassis.json"
+    },
+    "/user/list": {
+      "$ref": "./user/listUser/listUser.json"
+    },
+    "/item/list": {
+      "$ref": "./item/listItem/listItem.json"
     }
   }
 }
