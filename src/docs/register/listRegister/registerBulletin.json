@@ -1,0 +1,31 @@
+{
+    "get": {
+        "tags": [
+            "Register - Lista de Register"
+        ],
+        "summary": "Lista de Register",
+        "description": "Retorna uma lista dr Register Bulletin",
+        "responses": {
+            "200": {
+                "description": "OK",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "properties": {
+                                    "chassi_id": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "400": {
+                "$ref": "../../errors/400.json"
+            }
+        }
+    }
+}

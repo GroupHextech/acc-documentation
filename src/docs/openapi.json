@@ -37,6 +37,13 @@
         "User - Lista de Usuario"
         
       ]
+    },
+    {
+      "name": "Register",
+      "tags": [
+        "Register - Lista de Register"
+        
+      ]
     }
 
     
@@ -47,10 +54,10 @@
     }
   ],
   "paths": {
-    "/bulletins/list": {
+    "/bulletin/list/all": {
       "$ref": "./bulletins/listbulletins/listBulletins.json"
     },
-    "/bulletins/list/{id}": {
+    "/bulletins/listar/{id}": {
       "$ref": "./bulletins/listbulletins/listBulletinsById.json"
     },
     "/chassi/list": {
@@ -59,8 +66,11 @@
     "/user/list": {
       "$ref": "./user/listUser/listUser.json"
     },
-    "/item/list": {
+    "/items/list/{chassi}": {
       "$ref": "./item/listItem/listItem.json"
+    },
+    "/register/bulletin":{
+      "$ref": "./register/listRegister/registerBulletin.json"
     }
   }
 }
