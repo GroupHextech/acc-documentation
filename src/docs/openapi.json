@@ -21,8 +21,32 @@
       "name": "Chassis",
       "tags": [
         "Chassis - Lista de chassis"
+        
+      ]
+    },
+    {
+      "name": "Item",
+      "tags": [
+        "Itens - Lista de Itens"
+        
+      ]
+    },
+    {
+      "name": "User",
+      "tags": [
+        "User - Lista de Usuario"
+        
+      ]
+    },
+    {
+      "name": "Register",
+      "tags": [
+        "Register - Lista de Register"
+        
       ]
     }
+
+    
   ],
   "servers": [
     {
@@ -30,14 +54,23 @@
     }
   ],
   "paths": {
-    "/bulletins/list": {
+    "/bulletin/list/all": {
       "$ref": "./bulletins/listbulletins/listBulletins.json"
     },
-    "/bulletins/list/{id}": {
+    "/bulletins/listar/{id}": {
       "$ref": "./bulletins/listbulletins/listBulletinsById.json"
     },
     "/chassi/list": {
       "$ref": "./chassi/listChassis/listChassis.json"
+    },
+    "/user/list": {
+      "$ref": "./user/listUser/listUser.json"
+    },
+    "/items/list/{chassi}": {
+      "$ref": "./item/listItem/listItem.json"
+    },
+    "/register/bulletin":{
+      "$ref": "./register/listRegister/registerBulletin.json"
     }
   }
 }

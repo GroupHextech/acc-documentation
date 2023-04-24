@@ -1,0 +1,31 @@
+{
+    "get": {
+        "tags": [
+            "Itens - Lista de Itens"
+        ],
+        "summary": "Lista de Itens",
+        "description": "Retorna uma lista de Itens",
+        "responses": {
+            "200": {
+                "description": "OK",
+                "content": {
+                    "application/json": {
+                        "schema": {
+                            "type": "array",
+                            "items": {
+                                "properties": {
+                                    "chassi_id": {
+                                        "type": "number"
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            },
+            "400": {
+                "$ref": "../../errors/400.json"
+            }
+        }
+    }
+}
