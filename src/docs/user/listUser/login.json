@@ -1,9 +1,9 @@
 {
     "get": {
         "tags": [
-            "User - Lista de Usuario"
+            "User - login"
         ],
-        "summary": "Lista de Usuario",
+        "summary": "Login",
         "description": "Retorna uma lista de Usuario",
         "responses": {
             "200": {
@@ -14,7 +14,7 @@
                             "type": "array",
                             "items": {
                                 "properties": {
-                                    "chassi_id": {
+                                    "login_id": {
                                         "type": "number"
                                     }
                                 }

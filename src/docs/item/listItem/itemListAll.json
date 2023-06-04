@@ -1,10 +1,10 @@
 {
     "get": {
         "tags": [
-            "Chassis - List All Chassi"
+            "Itens - item listAll"
         ],
-        "summary": "List All Chassi",
-        "description": "Retorna uma lista de chassis",
+        "summary": " item list All",
+        "description": "Retorna uma lista de Itens",
         "responses": {
             "200": {
               "description": "OK",
@@ -14,7 +14,7 @@
                     "type": "array",
                     "items": {
                       "properties": {
-                        "Chassi_name": {
+                        "service_item_name": {
                           "type": "string"
                         },
                         "part": {
