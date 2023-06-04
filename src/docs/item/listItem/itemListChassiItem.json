@@ -1,10 +1,10 @@
 {
     "get": {
         "tags": [
-            "Register - register bulletin"
+            "Itens - item List Chassi Item"
         ],
-        "summary": "register bulletin",
-        "description": "Retorna uma lista de Register Bulletin",
+        "summary": "item List Chassi Item",
+        "description": "Retorna uma lista de Chassi que esta no item",
         "responses": {
             "200": {
                 "description": "OK",
@@ -14,7 +14,7 @@
                             "type": "array",
                             "items": {
                                 "properties": {
-                                    "chassi_id": {
+                                    "nameChassiItem": {
                                         "type": "number"
                                     }
                                 }
