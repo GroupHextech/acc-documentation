@@ -1,10 +1,10 @@
 {
     "get": {
         "tags": [
-            "Itens - Lista de Itens"
+            "Itens - item contagem"
         ],
-        "summary": "Lista de Itens",
-        "description": "Retorna uma lista de Itens",
+        "summary": "item contagem",
+        "description": "Retorna uma lista da contagem de itens",
         "responses": {
             "200": {
                 "description": "OK",
@@ -14,7 +14,7 @@
                             "type": "array",
                             "items": {
                                 "properties": {
-                                    "chassi_id": {
+                                    "itemContagem": {
                                         "type": "number"
                                     }
                                 }

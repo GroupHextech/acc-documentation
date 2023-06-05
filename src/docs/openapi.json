@@ -3,73 +3,89 @@
   "info": {
     "title": "HexTech",
     "description": "Documentação interna feita para auxiliar no desenvolvimento da aplicação da HexTech. Aqui você irá encontrar todos os endpoints.",
-    "version": "1.0.0",
+    "version": "1.0.1",
     "contact": {
-      "name": "Suporte",
-      "email": "lfborgesrp1@gmail.com"
+      "name": "Equipe",
+      "email": "HexTech@gmail.com"
     }
   },
   "x-tagGroups": [
     {
-      "name": "Boletins",
+      "name": "bulletin",
       "tags": [
-        "Boletins - Lista de boletins de serviço",
-        "Boletins - Lista de boletins de serviço por id"
+        "bulletin - bulletin listar by chassi",
+        "bulletin - bulletin list all",
+        "bulletin - update bulletin"
+        
       ]
     },
     {
       "name": "Chassis",
       "tags": [
-        "Chassis - Lista de chassis"
+        "Chassis - List All Chassi"
         
       ]
     },
     {
       "name": "Item",
       "tags": [
-        "Itens - Lista de Itens"
-        
+        "Itens - items listBy Chassi",
+        "Itens - item listAll",
+        "Itens - item contagem",
+        "Itens - item List Chassi Item"
       ]
     },
     {
       "name": "User",
       "tags": [
-        "User - Lista de Usuario"
-        
+        "User - login"
       ]
     },
     {
       "name": "Register",
       "tags": [
-        "Register - Lista de Register"
-        
+        "Register - register bulletin"
       ]
     }
-
-    
   ],
   "servers": [
     {
-      "url": "http://localhost:8080"
+      "url": "http://localhost:3333"
     }
   ],
   "paths": {
     "/bulletin/list/all": {
-      "$ref": "./bulletins/listbulletins/listBulletins.json"
+      "$ref": "./bulletins/listbulletins/listBulletinsAll.json"
     },
-    "/bulletins/listar/{id}": {
-      "$ref": "./bulletins/listbulletins/listBulletinsById.json"
+    "/bulletins/listar/{chassi}": {
+      "$ref": "./bulletins/listbulletins/listBulletinsByChassi.json"
     },
-    "/chassi/list": {
+    "/update/bulletin": {
+      "$ref": "./bulletins/updateBulletin/updateBulletin.json"
+    },
+    "/localhost:8080/login": {
+      "$ref": "./user/listUser/login.json"
+    },
+    "/localhost:8080/chassi/list": {
       "$ref": "./chassi/listChassis/listChassis.json"
     },
-    "/user/list": {
-      "$ref": "./user/listUser/listUser.json"
+    "/item/listchassi{item}": {
+      "$ref": "./item/listItem/itemListChassiItem.json"
     },
     "/items/list/{chassi}": {
-      "$ref": "./item/listItem/listItem.json"
+      "$ref": "./item/listItem/itemListByChassi.json"
     },
-    "/register/bulletin":{
+    "/item/listall": {
+      "$ref": "./item/listItem/itemListAll.json"
+    },
+    "/item/contagem": {
+      "$ref": "./item/listItem/itemContagem.json"
+    },
+    "localhost:8080/": {
+      "$ref": "./register/listRegister/localhost.json"
+    }
+    ,
+    "/RegisterBulletin/": {
       "$ref": "./register/listRegister/registerBulletin.json"
     }
   }

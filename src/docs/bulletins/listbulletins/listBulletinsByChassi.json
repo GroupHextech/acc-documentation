@@ -1,18 +1,17 @@
 {
   "get": {
     "tags": [
-      "Boletins - Lista de boletins de serviço"
+      "bulletin - bulletin listar by chassi"
     ],
-    "summary": "Lista de boletins de serviço",
-    "description": "Retorna uma lista de boletins de serviço",
+    "summary": "bulletin listar by chassi",
+    "description": "Retorna os dados de um boletim de serviço.",
     "responses": {
       "200": {
         "description": "OK",
         "content": {
           "application/json": {
             "schema": {
-              "type": "array",
-              "items": {
+              "type": "object",
                 "properties": {
                   "service_bulletin_name": {
                     "type": "string"
@@ -22,7 +21,6 @@
                   }
                 }
               }
-            }
           }
         }
       },
